@@ -48,7 +48,7 @@ const createInfo = async (req, res, next) => {
    character: req.body.character,
   };
   info.push(newInfo);
-  fs.writeFileSync(infoFilePath, JSON.stringify(stats));
+  fs.writeFileSync(infoFilePath, JSON.stringify(info));
   res.status(201).json(newInfo);
  } catch (e) {
   next(e);
@@ -84,13 +84,15 @@ const updateInfo = async (req, res, next) => {
    } else {
     return waifu;
    }
-  })
+  });
+  fs.writeFileSync(infoFilePath, JSON.stringify(newInfo));
+  res.status(200).json(newInfoData);
  } catch (e) {
   next(e);
  }
 };
 
-router.route('/api/stats/:id').get(getInfo).put(updateInfo);
+router.route('/api/v1/info/:id').get(getInfo).put(updateInfo);
 
 //DELETE method
 const deleteInfo = async (req, res, next) => {

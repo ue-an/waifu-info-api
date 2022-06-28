@@ -15,7 +15,7 @@
   "anime": "Kaguya-sama: Love is War",
   "birthdate": "00/00/00",
   "age": 15,
-  "hairColor":"black",
+  "hairColor": "black",
   "characteristics": "long hair, petit physique",
   "character": "clever, intelligent, shrewd"
  },
@@ -24,9 +24,9 @@
   "name": "Zero Two",
   "anime": "Darling in the Franxx",
   "birthdate": "00/00/00",
-  "age":15,
-  "hairColor":"pink",
-  "characteristics":"long hair, have horns, red highlight beneath the eye",
+  "age": 15,
+  "hairColor": "pink",
+  "characteristics": "long hair, have horns, red highlight beneath the eye",
   "character": ""
  },
  {
@@ -34,9 +34,9 @@
   "name": "Ai Hayasaka",
   "anime": "Kaguya-sama: Love is War",
   "birthdate": "00/00/00",
-  "age":15,
-  "hairColor":"blonde",
-  "characteristics":"long hair, pale skin",
+  "age": 15,
+  "hairColor": "blonde",
+  "characteristics": "long hair, pale skin",
   "character": "fun, funny, serious, reliable as hell, "
  },
  {
@@ -44,9 +44,9 @@
   "name": "Kaori Miyazono",
   "anime": "Shigatsu wa Kimi no Uso",
   "birthdate": "00/00/00",
-  "age":15,
-  "hairColor":"blonde",
-  "characteristics":"long hair, plays violin, rounded blue eyes",
+  "age": 15,
+  "hairColor": "blonde",
+  "characteristics": "long hair, plays violin, rounded blue eyes",
   "character": "fun, energetic, lively, passionate, loves sweets, loves music, eats a lot, brutal yet kind"
  },
  {
@@ -54,10 +54,19 @@
   "name": "Mirai Kuriyama",
   "anime": "Kyoukai no Kanata",
   "birthdate": "00/00/00",
-  "age":15,
-  "hairColor":"pink",
-  "characteristics":"short hair, wears glasses, not so tall",
+  "age": 15,
+  "hairColor": "pink",
+  "characteristics": "short hair, wears glasses, not so tall",
   "character": "fun, funny, passionate, loves to eat"
+ },
+ {
+  "id": 6,
+  "name": "Reina Kousaka",
+  "anime": "Hibike! Euphonium",
+  "birthdate": "00/00/00",
+  "age": 15,
+  "hairColor": "black",
+  "characteristics": "medium long hair, plays trumpet, medium is premium, absolute territory",
+  "character": ""
  }
- 
 ]

@@ -32,7 +32,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
- console.console.log(
+ console.log(
   `Express Server started on Port ${app.get(
    'port'
   )} | Environment : ${app.get('env')}`

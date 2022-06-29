@@ -18,7 +18,7 @@ const getInfo = async (req, res, next) => {
   if (!waifuInfo) {
    const err = new Error('Waifu not found');
    err.status = 400;
-   throw error;
+   throw err;
   }
   res.json(waifuInfo);
  } catch (e) {

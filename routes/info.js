@@ -33,7 +33,7 @@ const getInfoByName = async (req, res, next) => {
   const data = fs.readFileSync(infoFilePath);
   const info = JSON.parse(data);
   const waifuInfo = info.find(
-   (waifu) => waifu.name === String(req.params.name).toLowerCase().trim()
+   (waifu) => waifu.name.toLowerCase.trim === String(req.params.name).toLowerCase().trim()
   );
   if (!waifuInfo) {
    const err = new Error('Waifu not found');

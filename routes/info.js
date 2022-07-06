@@ -28,6 +28,26 @@ const getInfo = async (req, res, next) => {
 
 router.route('/api/v1/info/:id').get(getInfo);
 
+const getInfoByName = async (req, res, next) => {
+ try {
+  const data = fs.readFileSync(infoFilePath);
+  const info = JSON.parse(data);
+  const waifuInfo = info.find(
+   (waifu) => waifu.name === String(req.params.name)
+  );
+  if (!waifuInfo) {
+   const err = new Error('Waifu not found');
+   err.status = 400;
+   throw err;
+  }
+  res.json(waifuInfo);
+ } catch (e) {
+  next(e);
+ }
+};
+
+router.route('/api/v1/info/:name').get(getInfoByName);
+
 module.exports = router;
 
 
@@ -120,3 +140,4 @@ res.status(200).end();
 };
 
 router.route('/api/v1/info/:id').get(getInfo).put(updateInfo).delete(deleteInfo);
+router.route('/api/v1/info/:name').get(getInfoByName)
